@@ -15,7 +15,10 @@ def registrarCuentas(cuentas):
         
 
 def imprimirCuentas(cuentas):
-    print(cuentas)
+    for row in cuentas:
+        for elem in row:
+            print(elem, end=' ')
+        print()
 
 
 #programa principal
