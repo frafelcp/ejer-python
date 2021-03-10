@@ -5,3 +5,9 @@ frase = "Felix Castro estudiante de cuarto cuatrimestre de Tecnico Profesional e
 archivo.write(frase) #metodo para escribir en el archivo
 #cerramos la edicion del archivo
 archivo.close() #metodo para cerrar archivo
+
+#abrir y leer archivo linea por linea
+archivoF = open("archivo.txt", "r")
+lineas = archivoF.readlines()
+archivoF.close()
+print(lineas)
