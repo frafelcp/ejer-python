@@ -1,2 +1,6 @@
-Felix Castro estudiante de cuarto cuatrimestre de Tecnico Profesional en Sistemas Informatico
-estas es otra linea
+70907080,Felix Castro,50,25,892000,2,0
+70807090,Rafael Palomino,55,30,892000,2,0
+198562456,Jhonatan Acunia,32,2,2500500,1,6
+158746658,David Gutierrez,32,8,892000,1,3
+187563214,Jose Villarreal,19,1,892000,1,4
+7894,kelly,65,30,1200000,2,6
