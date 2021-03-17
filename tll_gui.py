@@ -99,4 +99,58 @@ def main():
         else:
             print("Opcion no valida")
 
-main()
+#main()
+
+import tkinter as tk
+
+ventas = tk.Tk()
+ventas.iconbitmap("OIP.ico")
+ventas.title("Hardware y Servicios - Ventas")
+ventas.geometry("500x500")
+ventas.resizable(0, 0)
+
+lblCedula = tk.Label(ventas, text="Cedula")
+lblCedula.grid(pady = 5, row = 0, column = 0)
+
+txtCedula = tk.Entry(ventas)
+txtCedula.grid(pady = 5, row = 0, column = 1)
+
+lblNombre = tk.Label(ventas, text="Nombre")
+lblNombre.grid(pady = 5, row = 1, column = 0)
+
+txtNombre = tk.Entry(ventas)
+txtNombre.grid(pady = 5, row = 1, column = 1)
+
+lblCantidad = tk.Label(ventas, text="Cantidad")
+lblCantidad.grid(pady = 5, row = 2, column = 0)
+
+txtCantidad = tk.Entry(ventas)
+txtCantidad.grid(pady = 5, row = 2, column = 1)
+
+lblPrecio= tk.Label(ventas, text="Precio x PC")
+lblPrecio.grid(pady = 5, row = 3, column = 0)
+
+txtPrecio = tk.Entry(ventas)
+txtPrecio.grid(pady = 5, row = 3, column = 1)
+
+convertMoneda = tk.IntVar()
+radioDolar = tk.Radiobutton(ventas, text="Dolar", variable=convertMoneda, value="1")
+radioDolar.grid(pady = 5, row = 4, column = 0)
+radioDolar = tk.Radiobutton(ventas, text="Euro", variable=convertMoneda, value="2")
+radioDolar.grid(pady = 5, row = 4, column = 1)
+
+btnEnviar = tk.Button(ventas, text="Enviar")
+btnEnviar.grid(pady = 5, row = 5, column = 0)
+btnCancelar= tk.Button(ventas, text="Cancelar")
+btnCancelar.grid(pady = 5, row = 5, column = 1)
+
+lblTotal= tk.Label(ventas, text="Total")
+lblTotal.grid(pady = 5, row = 6, column = 0)
+
+textTotal = tk.Text(ventas, width=25, height=15)
+textTotal.grid(pady=5, row=6, column=1)
+scrollver = tk.Scrollbar(ventas, command=textTotal.yview)
+scrollver.grid(row=6, column=2, sticky="nsew")
+textTotal.config(yscrollcommand=scrollver.set)
+
+ventas.mainloop()
