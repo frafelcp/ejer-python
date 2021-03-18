@@ -35,8 +35,9 @@ def imprimir(lista):
             base = int(entBase.get())
             altura = int(entAltura.get())
             ar = (base * altura)#area
-            #lblArea.configure(text="El area es ")
-            #lblResp.configure(text=ar)
+            res = "ID:", ide, "Nombre:", nombre, "Area:", ar
+            lblArea.configure(text="El area es ")
+            lblResp.configure(text=res)
             #print("ID:", ide, "Nombre:", nombre, "\nArea:", ar)
             lblArea
     except ValueError:
