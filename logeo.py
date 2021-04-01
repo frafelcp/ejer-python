@@ -9,7 +9,9 @@ def registrar(cuentas):
     #retornamos usuarios y contraseñas en una lista de listas
     return cuentas
     
-        
+def iniciarSesion(cuentas):
+    usuario = input("Ingrese su usuario: ")
+            
 
 def imprimirCuentas(cuentas):
     for row in cuentas:
@@ -53,7 +55,22 @@ while True:
             else:
                 print("Opcion invalida")
     elif opcion == 2:
-        print("INICIAR SESION")
+        print("----------------------")
+        print("MENU INICIAR SESION")
+        while True:
+            print("1. INGRESAR")
+            print("2. REGRESAR")
+
+            #escogemos una opcion del menu principal iniciar sesion
+            opcionIniSesion = int(input("Accion a ejecutar: "))
+
+            if opcionIniSesion == 1:
+                print()
+            elif opcionIniSesion == 2:
+                print("REGRESAR A MENU PRINCIPAL")
+                break
+            else:
+                print("Opcion invalida")
         cuentas = imprimirCuentas(cuentas)
     elif opcion == 3:
         print("SALIR DEL PROGRAMA")
